@@ -4,8 +4,16 @@ models:
   - name: stg_card_events
     columns:
       - name: card_event_id
-        tests:
-          - not_null
+        tests: [not_null]
       - name: card_id
-        tests:
-          - not_null
+        tests: [not_null]
+
+  - name: stg_card_transactions
+    columns:
+      - name: txn_id
+        tests: [not_null]
+
+  - name: stg_entity
+    columns:
+      - name: entity_id
+        tests: [not_null]
