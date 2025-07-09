@@ -17,3 +17,8 @@ models:
     columns:
       - name: entity_id
         tests: [not_null]
+
+  - name: int_card_lifecycle
+    columns:
+      - name: card_id
+        tests: [not_null, unique]
