@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_card_events
+    columns:
+      - name: card_event_id
+        tests:
+          - not_null
+      - name: card_id
+        tests:
+          - not_null
